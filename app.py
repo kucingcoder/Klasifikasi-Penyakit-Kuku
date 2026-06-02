@@ -10,7 +10,7 @@ app = Flask(__name__)
 MODEL_PATH = 'nail_disease_model.keras'
 model = tf.keras.models.load_model(MODEL_PATH)
 
-# Urutannya harus sama persis dengan yang dihasilkan oleh `train_ds.class_names`
+# Urutannya harus sama persis dengan yang dihasilkan
 CLASS_NAMES = ['healthy', 'onychomycosis', 'psoriasis'] 
 
 IMG_HEIGHT = 224
